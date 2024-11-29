@@ -17,3 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::group(['middleware' => 'api_auth'], function () {
+    Route::post('test/log','API\CTL_API_Test@Test_Log');
+});

@@ -14,6 +14,8 @@ use Inertia\Inertia;
 |
 */
 
-Route::get('/', function(){
-    return Inertia::render('Home');
+Route::group(['middleware' => 'page_permission'], function () {
+    Route::get('/', function(){
+        return Inertia::render('Home');
+    });
 });
