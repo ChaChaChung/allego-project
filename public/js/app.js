@@ -40412,13 +40412,21 @@ module.exports = function getSideChannel() {
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
-	"./Home": [
-		"./resources/js/Pages/Home.tsx",
-		"resources_js_Pages_Home_tsx"
+	"./Home/Index": [
+		"./resources/js/Pages/Home/Index.tsx",
+		"resources_js_Pages_Home_Index_tsx"
 	],
-	"./Home.tsx": [
-		"./resources/js/Pages/Home.tsx",
-		"resources_js_Pages_Home_tsx"
+	"./Home/Index.tsx": [
+		"./resources/js/Pages/Home/Index.tsx",
+		"resources_js_Pages_Home_Index_tsx"
+	],
+	"./SocketTest/Index": [
+		"./resources/js/Pages/SocketTest/Index.tsx",
+		"resources_js_Pages_SocketTest_Index_tsx"
+	],
+	"./SocketTest/Index.tsx": [
+		"./resources/js/Pages/SocketTest/Index.tsx",
+		"resources_js_Pages_SocketTest_Index_tsx"
 	]
 };
 function webpackAsyncContext(req) {
@@ -40569,7 +40577,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "resources_js_Pages_Home_tsx") return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Home_Index_tsx":1,"resources_js_Pages_SocketTest_Index_tsx":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

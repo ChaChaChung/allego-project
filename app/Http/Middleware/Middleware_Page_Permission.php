@@ -6,6 +6,7 @@ use Test\Package\Test;
 use Common\Package\AccessLog;
 use Common\Package\CommonGlobal;
 use Practice\Package\Practice;
+use Cloud\Package\Cloud;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Session;
 use Closure;
@@ -38,9 +39,12 @@ class Middleware_Page_Permission
             // $d = AccessLog::WriteAccessLog();
             // Log::alert("d => $d");
 
+            $e = Cloud::Cloud();
+            Log::alert("e => $e");
+
             // Session::put('company_sid', 7);
             // Session::put('user_sid', 999);
-            AccessLog::LogHandle('M', $func_name, true, 'TEST');
+            // AccessLog::LogHandle('M', $func_name, true, 'TEST');
 
             return $next($request);
         } catch (\Exception $e) {

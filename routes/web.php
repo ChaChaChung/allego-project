@@ -16,6 +16,10 @@ use Inertia\Inertia;
 
 Route::group(['middleware' => 'page_permission'], function () {
     Route::get('/', function(){
-        return Inertia::render('Home');
+        return Inertia::render('Home/Index');
     });
+});
+
+Route::get('/socket/test', function(){
+    return Inertia::render('SocketTest/Index');
 });
