@@ -10,13 +10,19 @@
         "production": "mix --production"
     },
     "devDependencies": {
+        "@vteam_components/cloud": "https://nexus.vteam-cloud.com/repository/vteam-npm/@vteam_components/cloud/-/cloud-2.16.58.tgz",
+        "@vteam_components/methods": "https://nexus.vteam-cloud.com/repository/vteam-npm/@vteam_components/methods/-/methods-1.0.45.tgz",
+        "@vteam_components/redux": "https://nexus.vteam-cloud.com/repository/vteam-npm/@vteam_components/redux/-/redux-1.0.27.tgz",
+        "@vteam_components/shared": "https://nexus.vteam-cloud.com/repository/vteam-npm/@vteam_components/shared/-/shared-1.5.35.tgz",
         "axios": "^0.21",
         "eslint": "^8.56.0",
         "eslint-config-airbnb": "^19.0.4",
         "eslint-config-airbnb-typescript": "^17.1.0",
+        "laravel-echo": "^1.17.1",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.1.14",
+        "pusher-js": "^8.4.0-rc2",
         "resolve-url-loader": "^5.0.0",
         "sass": "^1.65.1",
         "sass-loader": "^12.1.0",
@@ -29,9 +35,11 @@
         "@types/react": "^18.3.11",
         "@typescript-eslint/eslint-plugin": "^6.21.0",
         "@typescript-eslint/parser": "^6.21.0",
+        "bootstrap": "^5.3.3",
         "eslint-plugin-import": "^2.29.1",
         "eslint-plugin-react": "^7.33.2",
         "eslint-plugin-react-hooks": "^4.6.0",
+        "moment": "^2.30.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"
     }

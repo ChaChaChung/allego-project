@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Events\MyEvent;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,5 @@ Route::group(['middleware' => 'page_permission'], function () {
 Route::get('/socket/test', function(){
     return Inertia::render('SocketTest/Index');
 });
+
+Route::post('/test', 'CTL_Test@Method_Test');
