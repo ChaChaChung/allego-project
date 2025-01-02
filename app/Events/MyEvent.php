@@ -15,13 +15,15 @@ class MyEvent implements ShouldBroadcast
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
     public $message;
+    public $company_sid;
 
     /**
      * Create a new event instance.
      */
-    public function __construct($message)
+    public function __construct($message, $company_sid)
     {
         $this->message = $message;
+        $this->company_sid = $company_sid;
     }
 
     /**
@@ -38,7 +40,12 @@ class MyEvent implements ShouldBroadcast
 
     public function broadcastOn()
     {
-        return new Channel('my-channel');
+        try {
+            return new Channel('my-channel.'.$this->company_sid); // 廣播到的頻道名稱
+        } catch (\Throwable $e) {
+            // \Log::alert($e->getMessage());
+            throw new \Exception('broadcastOn 失敗 - ' . $e->getMessage());
+        }
     }
 
     public function broadcastAs()

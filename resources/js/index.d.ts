@@ -65,9 +65,11 @@ declare global {
     }
 
     let api: typeof apiFile.default
+    let Pusher: typeof Pusher
 
     interface Window {
         api: api
+        Pusher: Pusher
     }
 }
 export {}

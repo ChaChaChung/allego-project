@@ -2,16 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Controllers\Controller;
+
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
 use Common\Package\AccessLog;
 use Common\Package\CommonGlobal;
-use App\Events\MyEvent;
 
+use App\Events\MyEvent;
 use App\Models\MDL_Test_Table;
 
 class CTL_Test extends Controller
 {
+    protected $state_flag = false; // 成功/失敗旗標
+    protected $state_text = '';    // 回傳 Ajax 文字回應
+    protected $state_data = '';    // 回傳 Ajax 資料內容
+    protected $state_log = '';     // 上傳 Log 文字
+
     public function Method_Test(Request $request)
     {
         try {
@@ -44,7 +50,7 @@ class CTL_Test extends Controller
                 'test_date' => date('Y-m-d H:i:s'),
             ]);
 
-            event(new MyEvent('有新資料'));
+            event(new MyEvent('有新資料', 7));
 
             $this->state_flag = true;
             $this->state_text = '';

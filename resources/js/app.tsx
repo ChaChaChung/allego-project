@@ -8,9 +8,11 @@ import '../css/app.scss'
 import 'bootstrap/dist/css/bootstrap.css';
 import '@vteam_components/cloud/dist/style';
 import '@vteam_components/shared/dist/style';
+import Pusher from 'pusher-js';
 import api from './api'
 
 window.api = api
+window.Pusher = Pusher;
 
 createInertiaApp({
     resolve: (name) => {
