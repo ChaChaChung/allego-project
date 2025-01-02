@@ -8,11 +8,8 @@ const Index = () => {
         const echo = new Echo({
             broadcaster: 'reverb',
             key: 'vteamvteam',
-            wsHost: '192.168.1.201',
-            wsPort: 6001,
-            forceTLS: false,
-            encrypted: false,
-            enabledTransports: ['ws', 'wss'],
+            wsHost: 'notify.vteam-cloud.com',
+            wsPort: 6001
         });
 
         echo.channel(`my-channel.${company_sid}`)
