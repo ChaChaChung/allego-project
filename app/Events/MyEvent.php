@@ -41,9 +41,10 @@ class MyEvent implements ShouldBroadcast
     public function broadcastOn()
     {
         try {
+            \Log::alert('Broadcasting event');
             return new Channel('my-channel.'.$this->company_sid); // 廣播到的頻道名稱
         } catch (\Throwable $e) {
-            // \Log::alert($e->getMessage());
+            \Log::alert($e->getMessage());
             throw new \Exception('broadcastOn 失敗 - ' . $e->getMessage());
         }
     }

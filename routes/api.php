@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::group(['middleware' => 'api_auth'], function () {
     Route::post('test/log','API\CTL_API_Test@Test_Log');
 });
+
+Route::get('/reverb/connections', 'ReverbMonitoringController@getConnections');

@@ -25,4 +25,8 @@ Route::get('/socket/test', function(){
     return Inertia::render('SocketTest/Index');
 });
 
+Route::get('/socket/heartbeat', function(){
+    return Inertia::render('SocketHeartBeat/Index');
+});
+
 Route::post('/test', 'CTL_Test@Method_Test');

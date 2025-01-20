@@ -46773,6 +46773,22 @@ var map = {
 		"./resources/js/Pages/Home/Index.tsx",
 		"resources_js_Pages_Home_Index_tsx"
 	],
+	"./SocketHeartBeat/HeartbeatMonitor": [
+		"./resources/js/Pages/SocketHeartBeat/HeartbeatMonitor.tsx",
+		"resources_js_Pages_SocketHeartBeat_HeartbeatMonitor_tsx"
+	],
+	"./SocketHeartBeat/HeartbeatMonitor.tsx": [
+		"./resources/js/Pages/SocketHeartBeat/HeartbeatMonitor.tsx",
+		"resources_js_Pages_SocketHeartBeat_HeartbeatMonitor_tsx"
+	],
+	"./SocketHeartBeat/Index": [
+		"./resources/js/Pages/SocketHeartBeat/Index.tsx",
+		"resources_js_Pages_SocketHeartBeat_Index_tsx"
+	],
+	"./SocketHeartBeat/Index.tsx": [
+		"./resources/js/Pages/SocketHeartBeat/Index.tsx",
+		"resources_js_Pages_SocketHeartBeat_Index_tsx"
+	],
 	"./SocketTest/Index": [
 		"./resources/js/Pages/SocketTest/Index.tsx",
 		"resources_js_Pages_SocketTest_Index_tsx"
@@ -46960,7 +46976,7 @@ module.exports = /*#__PURE__*/JSON.parse('{"name":"axios","version":"0.21.4","de
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_Home_Index_tsx":"c03ecaf3d75eaeb8","resources_js_Pages_SocketTest_Index_tsx":"4f504881f509834f","node_modules_dompurify_dist_purify_js":"e76dd33bf70e3cf6","node_modules_canvg_lib_index_es_js":"44a6224f6af6c2b1"}[chunkId] + "";
+/******/ 			return "js/" + chunkId + ".js?id=" + {"resources_js_Pages_Home_Index_tsx":"c03ecaf3d75eaeb8","resources_js_Pages_SocketHeartBeat_HeartbeatMonitor_tsx":"f70ea37672415150","resources_js_Pages_SocketHeartBeat_Index_tsx":"92048584f702985a","resources_js_Pages_SocketTest_Index_tsx":"8d7f429079508d64","node_modules_dompurify_dist_purify_js":"e76dd33bf70e3cf6","node_modules_canvg_lib_index_es_js":"44a6224f6af6c2b1"}[chunkId] + "";
 /******/ 		};
 /******/ 	})();
 /******/ 	
